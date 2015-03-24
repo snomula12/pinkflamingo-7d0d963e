@@ -1,0 +1,13 @@
+# encoding: utf-8
+
+from __future__ import unicode_literals
+
+from pinkflamingo.settings.defaults import DATABASES
+from pinkflamingo.settings.tests import NOSE_ARGS
+
+
+NOSE_ARGS += [
+    '--failure-detail',
+    '--nocapture',
+    '--verbosity=2',
+]

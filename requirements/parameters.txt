@@ -1,0 +1,3 @@
+# Parameters needed to satisfy pip security restrictions
+
+--allow-all-external

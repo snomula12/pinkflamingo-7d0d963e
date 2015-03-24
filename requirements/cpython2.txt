@@ -1,0 +1,6 @@
+# Dependencies for running the application with the standard Python 2.7 runtime
+# Attempts to use Python 3.x can use this as well
+
+psycopg2==2.5.2  # PostgreSQL driver
+
+--requirement base.txt

@@ -1,0 +1,162 @@
+[
+  {
+    "fields":{
+      "publisher":1,
+      "authors":[
+        2
+      ],
+      "isbn":"1111111111111",
+      "description":"",
+      "title":"Azure Dream"
+    },
+    "model":"pinkflamingo.book",
+    "pk":1
+  },
+  {
+    "fields":{
+      "publisher":1,
+      "authors":[
+        2
+      ],
+      "isbn":"22222222222",
+      "description":"",
+      "title":"Nothing of Flower"
+    },
+    "model":"pinkflamingo.book",
+    "pk":2
+  },
+  {
+    "fields":{
+      "publisher":2,
+      "authors":[
+        1
+      ],
+      "isbn":"3333333333333",
+      "description":"",
+      "title":"The Wind's Souls"
+    },
+    "model":"pinkflamingo.book",
+    "pk":3
+  },
+  {
+    "fields":{
+      "publisher":2,
+      "authors":[
+        2,
+        1
+      ],
+      "isbn":"4444444444444",
+      "description":"",
+      "title":"Wizards in the Secret"
+    },
+    "model":"pinkflamingo.book",
+    "pk":4
+  },
+  {
+    "fields":{
+      "publisher":1,
+      "authors":[
+        2
+      ],
+      "isbn":"5555555555555",
+      "description":"",
+      "title":"The Moon's River"
+    },
+    "model":"pinkflamingo.book",
+    "pk":5
+  },
+  {
+    "fields":{
+      "name":"Oui Press"
+    },
+    "model":"pinkflamingo.publisher",
+    "pk":1
+  },
+  {
+    "fields":{
+      "name":"Onomatopoetic"
+    },
+    "model":"pinkflamingo.publisher",
+    "pk":2
+  },
+  {
+    "fields":{
+      "name":"Kelly Jackson"
+    },
+    "model":"pinkflamingo.author",
+    "pk":1
+  },
+  {
+    "fields":{
+      "name":"M. Jordan"
+    },
+    "model":"pinkflamingo.author",
+    "pk":2
+  },
+  {
+    "fields":{
+      "username":"someone",
+      "first_name":"",
+      "last_name":"",
+      "is_active":true,
+      "is_superuser":false,
+      "is_staff":false,
+      "last_login":"2015-03-25T18:20:04.905Z",
+      "groups":[
+
+      ],
+      "user_permissions":[
+
+      ],
+      "password":"md5$kg40kwJviaIp$3ba43211a9c03c601920e053b7166f16",
+      "email":"",
+      "date_joined":"2015-03-25T18:20:04.905Z"
+    },
+    "model":"auth.user",
+    "pk":2
+  },
+  {
+    "fields":{
+      "username":"someone_else",
+      "first_name":"",
+      "last_name":"",
+      "is_active":true,
+      "is_superuser":false,
+      "is_staff":false,
+      "last_login":"2015-03-25T18:20:13.901Z",
+      "groups":[
+
+      ],
+      "user_permissions":[
+
+      ],
+      "password":"md5$aIbGDeVFuE9n$c1889eb9e2ec78f7668229844e08ace0",
+      "email":"",
+      "date_joined":"2015-03-25T18:20:13.901Z"
+    },
+    "model":"auth.user",
+    "pk":3
+  },
+  {
+    "fields":{
+      "username":"yet_another",
+      "first_name":"",
+      "last_name":"",
+      "is_active":true,
+      "is_superuser":false,
+      "is_staff":false,
+      "last_login":"2015-03-25T18:20:22.106Z",
+      "groups":[
+
+      ],
+      "user_permissions":[
+
+      ],
+      "password":"md5$UZU6wGTguk9L$385be12cd2fb207ef0cd4e190fcdc4e1",
+      "email":"",
+      "date_joined":"2015-03-25T18:20:22.106Z"
+    },
+    "model":"auth.user",
+    "pk":4
+  }
+]

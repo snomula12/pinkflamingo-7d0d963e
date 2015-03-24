@@ -1,0 +1,20 @@
+--requirement parameters.txt
+
+# >>> INDIRECT DEPENDENCIES
+
+# httpie
+requests==2.5.3
+Pygments==2.0.2
+
+# ipython
+gnureadline==6.3.3
+
+# django-extensions
+six==1.9.0
+
+# >>> DIRECT DEPENDENCIES
+
+httpie==0.9.2  # human-friendly interaction with HTTP
+ipython==3.0.0  # human-friendly interaction with the Python shell
+django-extensions==1.5.0  # for shell_plus (and lots more)
+ipdb==0.8  # For debugging

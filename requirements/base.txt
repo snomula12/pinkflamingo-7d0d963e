@@ -1,0 +1,16 @@
+# Only works with pip==1.5.4
+# (if pip version changes, also update git-hooks/post-merge and fabfile._update_packages())
+
+--requirement parameters.txt
+
+Django==1.7.4
+django-nose==1.2
+
+# djangorestframework (dependency of XML parser for better security)
+defusedxml==0.4.1
+
+# Adds support for Postgres HStore fields.
+django-hstore==1.2.4
+
+# For building an API
+djangorestframework==3.1.0

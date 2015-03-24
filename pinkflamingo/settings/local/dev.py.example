@@ -1,0 +1,12 @@
+# encoding: utf-8
+
+from __future__ import unicode_literals
+
+COMPRESS_ENABLED = False
+COMPRESS_OFFLINE = False
+
+DEBUG = True
+
+JS_DEBUG = True
+STATIC_DEBUG = False
+TEMPLATE_DEBUG = True

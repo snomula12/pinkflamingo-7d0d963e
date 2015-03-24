@@ -1,0 +1,13 @@
+--requirement parameters.txt
+
+# INDIRECT DEPENDENCIES
+
+# tox
+py==1.4.26
+virtualenv==1.11.4
+
+# DIRECT DEPENDENCIES
+
+tox==1.7.0  # For managing test environments
+mock==1.0.1  # For mocking
+ipdb==0.8  # For debugging
