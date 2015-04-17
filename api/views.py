@@ -1,9 +1,15 @@
 from django.contrib.auth.models import User
+from django.shortcuts import get_object_or_404
 
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
+from rest_framework.response import Response
 
-from api.serializers import UserSerializer, BookSerializer, PublisherSerializer, AuthorSerializer
-from pinkflamingo.models import Book, Publisher, Author
+from rest_framework.views import APIView
+
+from api.serializers import UserSerializer, BookSerializer, PublisherSerializer, AuthorSerializer, RatingSerializer
+from pinkflamingo.models import Book, Publisher, Author, Rating
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -36,3 +42,29 @@ class PublisherViewSet(viewsets.ModelViewSet):
     """
     queryset = Publisher.objects.all()
     serializer_class = PublisherSerializer
+
+
+
+class BooKForAuthorViewSet(APIView):
+    """
+    API endpoint that shows all books for a particular author.
+    """
+    def get(self, request, author_id, format=None):
+        author = get_object_or_404(Author,pk=author_id)
+        queryset = Book.objects.filter(authors=author)
+        serializer = BookSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+
+class RateBookViewSet(generics.ListCreateAPIView):
+    """
+    API endpoint to rate books.
+    """
+
+    queryset = Rating.objects.all()
+    serializer_class = RatingSerializer
+
+
+
+    
+
